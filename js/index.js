@@ -48,6 +48,7 @@ if(queryString!="")
         st.value=word;
     serch()
     }
+    
 }
   bu.addEventListener("click",serch)
   function rovove(res)
