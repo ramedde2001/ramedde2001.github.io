@@ -50,6 +50,12 @@ if(queryString!="")
     }
     
 }
+else
+{
+	var st=document.getElementById("srt")
+	st.value="متال ظروف تخفيف متهم مسبوق"
+	serch()
+}
   bu.addEventListener("click",serch)
   function rovove(res)
   {
