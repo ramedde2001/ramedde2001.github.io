@@ -24,7 +24,8 @@ function show(shown, hidden) {
   const selectElement = document.getElementById('cho');
   console.log(selectElement)
   const lead=document.getElementById("ld")
-  var root="https://api.eu-gb.discovery.watson.cloud.ibm.com/instances/2513799b-9d19-40ab-b66d-053d045afb4f/v1/environments/0d630b27-86da-4b56-b899-2945feb51293/collections/d704429d-0d6d-47f1-b090-c1c33786fa74/query?version=2018-12-03&deduplicate=false&highlight=true&passages=true&passages.count=5&highlight=true&natural_language_query=";
+  var root1="https://api.eu-gb.discovery.watson.cloud.ibm.com/instances/2513799b-9d19-40ab-b66d-053d045afb4f/v1/environments/0d630b27-86da-4b56-b899-2945feb51293/collections/d704429d-0d6d-47f1-b090-c1c33786fa74/query?version=2018-12-03&deduplicate=false&highlight=true&passages=true&passages.count=5&highlight=true&natural_language_query=";
+  var root="https://api.eu-gb.discovery.watson.cloud.ibm.com/instances/0a066d2f-fa76-468e-8beb-c59dd3fa3c77/v1/environments/76fc9c9e-ddaf-4816-bdeb-fac8707fed58/collections/4ddc195e-ba79-4efe-b80f-be8baca0ccb2/query?version=2018-12-03&deduplicate=false&highlight=true&passages=true&passages.count=5&natural_language_query=";
   var index=0
   selectElement.addEventListener('change', (event) => {
    root=event.target.value
@@ -53,7 +54,7 @@ if(queryString!="")
 else
 {
 	var st=document.getElementById("srt")
-	st.value="متال ظروف تخفيف متهم مسبوق"
+	st.value="تنزيل ابناء البنت"
 	serch()
 }
   bu.addEventListener("click",serch)
@@ -167,7 +168,7 @@ var dateTime = date+' '+time;
       };
       
       xhr.open("GET", root+st.value);
-  xhr.setRequestHeader("Authorization", "Basic " + btoa("apikey:eE2buJm65mc_FtHzbhlV0M-sgrnp8cGuLrsrLCxZoPvo"));
+  xhr.setRequestHeader("Authorization", "Basic " + btoa("apikey:qZTcH9krS6FERMAT1tCG4FhzEThQ_onGetY9OBkiKWKH"));
   xhr.send()
   }//en if value
   else
