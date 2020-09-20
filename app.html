@@ -31,12 +31,14 @@
     </div>
 	<div class="row">
     <div class="col-sm-12">
-        <p>
-    اسم المستخدم المؤقت :test@test.com
-    </p>
-    <p>
-    كلمة السر : testtest
-    </p>
+      لطلب كلمة السر ادخل المعلومات
+   <br>
+   الايمايل :
+   <input id="email"  >
+   رقم الهاتف
+   <input id ="fon">
+   <button onclick="demande()"> طلب</button>
+    
     </div>
 	</div>
     </div>
@@ -81,7 +83,20 @@ var dateTime = date+' '+time;
             let ref = database.ref('dowlead');
             ref.push({time:dateTime})
    }
+function demande()
+{
+email=document.getElementById("email").value
+phon=document.getElementById("fon").value
+console.log(email +phon)
+let database = firebase.database();
+if(email!="" || phon!="")
+{
 
+            let ref = database.ref('dowlead');
+			ref.push({email:email,phone:phon})
+			}
+			
+}
 </script>
 <br>
 </body>
