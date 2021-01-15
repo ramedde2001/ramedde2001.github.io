@@ -52,6 +52,7 @@ if(queryString!="")
 {
     urlParams = new URLSearchParams(queryString);
     const word = urlParams.get('search');
+	
     var st=document.getElementById("srt")
     if(word!=null)
     {
