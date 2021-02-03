@@ -64,7 +64,7 @@ if(queryString!="")
 else
 {
 	var st=document.getElementById("srt")
-	st.value="تنزيل ابناء البنت"
+	st.value=" قانون الاسرة"
 	serch()
 }
 //end handler query
