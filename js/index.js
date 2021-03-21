@@ -163,13 +163,13 @@ function alert(msg)
   function creat_div_show(res)
   {
     var btn = document.createElement("Div"); 
-	var ads=document.createElement("ins"); 
+	/*var ads=document.createElement("ins"); 
 	ads.className="adsbygoogle"
 	ads.style="text-align:center;"
 	ads.setAttribute("data-ad-layout","in-article")
 	ads.setAttribute("data-ad-format","fluid")
 	ads.setAttribute("data-ad-client","ca-pub-4070706477071379")
-	ads.setAttribute("data-ad-slot","2861919136")
+	ads.setAttribute("data-ad-slot","2861919136")*/
     var hid_div=createhidediv(res.text)
         
 
@@ -186,7 +186,7 @@ function alert(msg)
 
     btn.appendChild(but_to_hid)// Insert text
     btn.appendChild(hid_div)
-	btn.appendChild(ads)
+	//btn.appendChild(ads)
     return btn
   }
 
